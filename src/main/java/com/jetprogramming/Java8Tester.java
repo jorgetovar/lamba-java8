@@ -29,8 +29,8 @@ public class Java8Tester {
 		// without parenthesis
 		GreetingService greetService2 = (message) -> System.out.println("Hello " + message);
 
-		greetService1.sayMessage("Mahesh");
-		greetService2.sayMessage("Suresh");
+		greetService1.sayMessage("Jorge");
+		greetService2.sayMessage("Tovar");
 
 		TestSomething something = (a) -> System.out.println("Number of lambda: " + a);
 		something.forLambda(3);
