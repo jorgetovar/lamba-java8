@@ -31,6 +31,9 @@ public class Java8Tester {
 
 		greetService1.sayMessage("Mahesh");
 		greetService2.sayMessage("Suresh");
+
+		TestSomething something = (a) -> System.out.println("Number of lambda: " + a);
+		something.forLambda(3);
 	}
 
 	interface MathOperation {
@@ -39,6 +42,10 @@ public class Java8Tester {
 
 	interface GreetingService {
 		void sayMessage(String message);
+	}
+
+	interface TestSomething {
+		void forLambda(int loops);
 	}
 
 	private int operate(int a, int b, MathOperation mathOperation) {
