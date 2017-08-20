@@ -3,7 +3,7 @@ package com.jetprogramming.efficiency;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class Sample {
+public class FindFirstSample {
   public static void eagerEvaluate(List<String> symbols) {
     List<StockInfo> stocks = StockFetcher.fetchStockPrices(symbols);
     
